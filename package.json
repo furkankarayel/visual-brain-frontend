@@ -10,6 +10,7 @@
     "@tsparticles/react": "^3.0.0",
     "@tsparticles/slim": "^3.4.0",
     "clarifai": "^2.9.1",
+    "dotenv": "^16.4.5",
     "particles-bg": "^2.5.5",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -21,9 +22,7 @@
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider  start",
-    "predeploy" : "npm run build",
-    "deploy" : "gh-pages -d build",
-    "build": "react-scripts --openssl-legacy-provider  build",
+    "build": "react-scripts --o penssl-legacy-provider  build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

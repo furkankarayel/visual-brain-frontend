@@ -55,12 +55,12 @@ class App extends Component {
 
   onImageSubmit = (event) => {
     this.setState({ imageUrl: this.state.input })
-    fetch(`${API_URL}/image/facedetection`), {
+    fetch(`${API_URL}/image/facedetection`, {
       method: 'post',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         "input": this.state.input
-      })}
+      })})
     .then(response => response.json())
     .then(response => {
       if(response) {
