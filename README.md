@@ -1,4 +1,5 @@
 # Visual Brain Frontend
+## Important note about the live link!
 Note: The live link depends on the visual brain API that is deployed on Render.com which could take up to 50 seconds to respond, because it's built upon a free instance. The responses could come late, so please give it another try. The app is fully functional :)
 
 # Getting Started with Create React App
