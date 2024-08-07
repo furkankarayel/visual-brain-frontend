@@ -1,3 +1,6 @@
+# Visual Brain Frontend
+Note: The live link depends on the visual brain API that is deployed on Render.com which could take up to 50 seconds to respond, because it's built upon a free instance. The responses could come late, so please give it another try. The app is fully functional :)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,4 +71,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# visual-brain-frontend
+
