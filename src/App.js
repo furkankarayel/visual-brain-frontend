@@ -112,20 +112,20 @@ class App extends Component {
     const faceLocations = [];
 
     if(data && data[0].data) {
-      const regions = data[0].data.regionsList;
+      const regions = data[0].data.regions;
 
       if (regions.length > 1) {
         regions.forEach(region => {
-          const clarifaiFace = region.regionInfo.boundingBox;
+          const clarifaiFace = region.region_info.bounding_box;
           const image = document.getElementById('inputimage');
           const width = Number(image.width);
           const height = Number(image.height);
           
           const faceLocation = {
-            leftCol: clarifaiFace.leftCol * width,
-            topRow: clarifaiFace.topRow * height,
-            rightCol: width - (clarifaiFace.rightCol * width * 0.95),
-            bottomRow: height - (clarifaiFace.bottomRow * height * 0.95)
+            leftCol: clarifaiFace.left_col * width,
+            topRow: clarifaiFace.top_row * height,
+            rightCol: width - (clarifaiFace.right_col * width * 0.95),
+            bottomRow: height - (clarifaiFace.bottom_row * height * 0.95)
           };
     
           faceLocations.push(faceLocation);
@@ -137,10 +137,10 @@ class App extends Component {
         const height = Number(image.height);
         
         const faceLocation = {
-          leftCol: clarifaiFace.leftCol * width,
-          topRow: clarifaiFace.topRow * height,
-          rightCol: width - (clarifaiFace.rightCol * width * 0.95),
-          bottomRow: height - (clarifaiFace.bottomRow * height * 0.95)
+          leftCol: clarifaiFace.left_col * width,
+          topRow: clarifaiFace.top_row * height,
+          rightCol: width - (clarifaiFace.right_col * width * 0.95),
+          bottomRow: height - (clarifaiFace.bottom_row * height * 0.95)
         };
     
         faceLocations.push(faceLocation);
@@ -172,7 +172,7 @@ class App extends Component {
     }).then(() => {
       this.setState({ init: true });
     });
-  }
+  } 
 
   onRouteChange = (route) => {
     if ( route === 'signout'){
